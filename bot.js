@@ -13,40 +13,28 @@ client.on('message', message => {
     message.reply("!rollDnD rolls a 20-sided die.")
     message.reply("!rollDuel rolls a 20-sided die 3 times, to be used for die duels.")
   }
-  if (message.content === '!critixe') {
-    message.reply('<@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998>')
-  }
-  if (message.content === '!roll') {
-    message.reply('You roll ' + String(Math.floor(Math.random() * 6) + 1) + ' and ' + String(Math.floor(Math.random() * 6) + 1) )
-  }
-  if (message.content === '!rollDnD') {
-    message.reply('You roll ' + String(Math.floor(Math.random() * 20) + 1))
-  }
-  
-  if (message.content === '!rollDuel') {
-    roll1 = Math.floor(Math.random() * 20) + 1
-    roll2 = Math.floor(Math.random() * 20) + 1
-    roll3 = Math.floor(Math.random() * 20) + 1
-//    roll4 = Math.floor(Math.random() * 20) + 1
-//    roll5 = Math.floor(Math.random() * 20) + 1
-//  If I roll 5 dice, the total somehow comes 5 to 10 seconds after the dice values.
-    total = 'Your total is ' + String(roll1 + roll2 + roll3)
 
-    message.reply('You roll ' + String(roll1))
-    message.reply('You roll ' + String(roll2))
-    message.reply('You roll ' + String(roll3))
-//    message.reply('You roll ' + String(roll4))
-//    message.reply('You roll ' + String(roll5))
-    message.reply(total) 
+  if (message.content === '!D4') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 4) + 1)
   }
-  
-  if (message.content === '!rollYes') {
-    if (message.author.username === "Happygator4723" || message.author.username === "CritiXe") {
-      message.reply('You roll ' + String(Math.floor(Math.random() * 9001) + 1000) )  
-    } else {
-      message.reply("You roll 0, for you do not have the power required to harness the power of Yes!") 
-    }
-      
+  if (message.content === '!D6') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 6) + 1)
+  }
+  if (message.content === '!D8') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 8) + 1)
+  }
+  if (message.content === '!D10') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 10) + 1)
+  }
+  if (message.content === '!D12') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 12) + 1)
+  }
+  if (message.content === '!D20') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 20) + 1)
+  }
+  if (message.content === '!D100') {
+    message.reply('You roll ' + String(Math.floor(Math.random() * 100) + 1)
+  }
   }
   
 });
