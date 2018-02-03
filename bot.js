@@ -8,10 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   if (message.content === '!help') {
-    message.reply("!critixe gets critixe's attention, but if I find you misusing it there will be punishments.")
-    message.reply("!roll rolls two 6 sided dice.")
-    message.reply("!rollDnD rolls a 20-sided die.")
-    message.reply("!rollDuel rolls a 20-sided die 3 times, to be used for die duels.")
+    message.reply("Use !DX where X is 4, 6, 8, 10, 12, 20, or 100 to roll that sided die.")
   }
 
   if (message.content === '!D4') {
