@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', message => {
   if (message.content === '!help') {
     message.reply("Use !DX where X is 4, 6, 8, 10, 12, 20, or 100 to roll that sided die.")
-
+  }
   if (message.content === '!D4') {
     message.reply('You roll ' + String(Math.floor(Math.random() * 4) + 1)
   }
